@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth ;
+}
+
 a:active{
   color:var(--text-color-secondary) ;
 }
@@ -46,21 +50,23 @@ button:hover{
   margin-top: 1vw;
   padding: 1vw;
   
+  
 }
-
-.container-2{
-  background-image: url(".\assets\img\combs-scissors-copy-space.jpg");
-  max-width: 100%;
-  height: auto;
-}
-
-
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+}
+
+.container-2{
+  max-width: 100%;
+  height: auto;
+}
+
+.container-contact{
+  gap:0;
 }
 
 
@@ -72,6 +78,24 @@ button:hover{
 }
 .home-card{
   background-color: transparent;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#home {
+  /* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
+  background-image: var(--bg--home-image);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 600px) {
@@ -79,6 +103,10 @@ button:hover{
   .main-section{
     margin-right: 4vw;
     margin-left: 4vw;
+  }
+  .contact-card{
+    flex-direction: column;
+    
   }
 }
 
