@@ -1,10 +1,10 @@
-:root{
-    --bg-color-principal :#F5C7D3;
-    --bg-color-secundario: #B998B3;
-    --card-color-principal: #C5B3B3;
-    --bg-boton-principal: #E7A8B1; 
-    --bg--button-hoover: #77779D;
-    --text-color-primary: #000000;
-    --text-color-secondary: #FDEFB0;
-    --bg--home-image: url("../assets/img/combs-scissors-copy-space.jpg");
-  }
+:root {
+	--bg-color-principal: #f5c7d3;
+	--bg-color-secundario: #b998b3;
+	--card-color-principal: #c5b3b3;
+	--bg-boton-principal: #e7a8b1;
+	--bg--button-hoover: #77779d;
+	--text-color-primary: #000000;
+	--text-color-secondary: #fdefb0;
+	--bg--home-image: url('../assets/img/combs-scissors-copy-space.jpg');
+}
