@@ -1,143 +1,140 @@
-
-@import url("./variables.css");
-@import url("./navbar.css");
+@import url('./variables.css');
+@import url('./navbar.css');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth ;
+	scroll-behavior: smooth;
 }
 
-a:active{
-  color:var(--text-color-secondary) ;
+a:active {
+	color: var(--text-color-secondary);
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-  background-color: var(--bg-boton-principal);
-  background: var(--bg-boton-principal);
-  border-radius: 50px;
-  padding: 5px;
-  margin: 5px;
-  border: 0cap;
+button {
+	background-color: var(--bg-boton-principal);
+	background: var(--bg-boton-principal);
+	border-radius: 50px;
+	padding: 5px;
+	margin: 5px;
+	border: 0cap;
 }
 
-button:hover{
-  background-color: var(--bg--button-hoover);
+button:hover {
+	background-color: var(--bg--button-hoover);
 }
 
-.servicios-images{
-  max-width: 100%;
-  height: auto;
+.servicios-images {
+	max-width: 100%;
+	height: auto;
 }
 
-.responsive-images{
-  width: 100%;
-  height: auto;
+.responsive-images {
+	width: 100%;
+	height: auto;
 }
 
-.main-section{
-  background-color: var(--bg-color-principal);
-  /*margin-right: 4vw;
-  margin-left: 4vw;*/
-  margin-top: 1vw;
-  padding: 1vw;
-  
-  
+.main-section {
+	background-color: var(--bg-color-principal);
+	margin: 0;
+	margin-top: 55px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	gap: 1rem;
 }
 
-.container-2{
-  max-width: 100%;
-  height: auto;
+.container-2 {
+	max-width: 100%;
+	height: auto;
 }
 
-.container-contact{
-  gap:0;
+.container-contact {
+	gap: 0;
 }
-
 
 .card {
-  background-color: var(--card-color-principal);
-  color: var(--text-color-primary);
-  padding: 1rem;
-  height: auto;
+	background-color: var(--card-color-principal);
+	color: var(--text-color-primary);
+	padding: 1rem;
+	height: auto;
 }
-.home-card{
-  background-color: transparent;
-  gap: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.home-card {
+	background-color: transparent;
+	gap: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.contact-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.contact-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 #home {
-  /* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
-  background-image: var(--bg--home-image);
-  background-size: cover;
-  background-repeat: no-repeat;
+	/* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
+	background-image: var(--bg--home-image);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 0; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  height: 0;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 0; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	height: 0;
 }
 
 .responsive-iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 50vh;
-}
-
-
-
-@media (min-width: 600px) {
-  .container { grid-template-columns: repeat(2, 1fr); }
-  .main-section{
-    margin-right: 4vw;
-    margin-left: 4vw;
-  }
-  .contact-card{
-    flex-direction: column;
-    
-  }
-
-  
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 50vh;
 }
 
 @media (min-width: 900px) {
-  .container-3 { grid-template-columns: repeat(3, 1fr); }
-  .main-section{
-    margin-right: 4vw;
-    margin-left: 4vw;
-  }
- 
-  
+	.container-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.main-section {
+		padding-right: 4vw;
+		padding-left: 4vw;
+	}
+}
+
+@media (min-width: 600px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.main-section {
+		padding-right: 4vw;
+		padding-left: 4vw;
+	}
+	.contact-card {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 900px) {
+	.main-section {
+		margin-top: 65px;
+	}
 }
