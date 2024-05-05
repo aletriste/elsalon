@@ -138,6 +138,19 @@ textarea {
 	height: 50vh;
 }
 
+.container-footer{
+	display: flex;
+	background-color: var(--bg-color-secundario);
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+	}
+
+	.redes{
+		padding: 10px;
+	}
+
+
 @media (min-width: 900px) {
 	.container-3 {
 		grid-template-columns: repeat(3, 1fr);
