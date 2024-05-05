@@ -91,6 +91,10 @@ button:hover {
 	align-items: center;
 }
 
+h3{
+	text-shadow: 0.1px 0.1px 5px #fff;
+}
+
 .card form {
 	display: flex;
 	flex-direction: column;
@@ -138,7 +142,7 @@ textarea {
 	height: 50vh;
 }
 
-.container-footer{
+.footer-container{
 	display: flex;
 	background-color: var(--bg-color-secundario);
 	flex-direction: row;
