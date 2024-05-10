@@ -13,6 +13,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 a:active {
 	color: var(--text-color-secondary);
 }
@@ -20,19 +25,23 @@ a:active {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
+	background-color: var(--bg-color-principal);
 }
 
 button {
 	background-color: var(--bg-boton-principal);
 	background: var(--bg-boton-principal);
 	border-radius: 50px;
-	padding: 5px;
+	padding: 10px 15px;
 	margin: 5px;
+	font-weight: 700;
 	border: 0cap;
+	transition: all 0.3s;
 }
 
 button:hover {
 	background-color: var(--bg--button-hoover);
+	transform: scale(1.1);
 }
 
 .servicios-images {
@@ -45,7 +54,9 @@ button:hover {
 	height: auto;
 }
 
-.main-section {
+.main-section,
+.main {
+	padding: 40px;
 	background-color: var(--bg-color-principal);
 	margin: 0;
 	margin-top: 55px;
@@ -79,7 +90,7 @@ button:hover {
 .card {
 	background-color: var(--card-color-principal);
 	color: var(--text-color-primary);
-	padding: 1rem;
+	padding: 1.3rem;
 	height: auto;
 }
 .home-card {
@@ -91,7 +102,7 @@ button:hover {
 	align-items: center;
 }
 
-h3{
+h3 {
 	text-shadow: 0.1px 0.1px 5px #fff;
 }
 
@@ -142,18 +153,17 @@ textarea {
 	height: 50vh;
 }
 
-.footer-container{
+.footer-container {
 	display: flex;
 	background-color: var(--bg-color-secundario);
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 10px;
-	}
+}
 
-	.redes{
-		padding: 10px;
-	}
-
+.redes {
+	padding: 10px;
+}
 
 @media (min-width: 900px) {
 	.container-3 {
