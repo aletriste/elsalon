@@ -191,5 +191,10 @@ textarea {
 @media (max-width: 900px) {
 	.main-section {
 		margin-top: 65px;
+		padding: 10px;
+	}
+
+	.main {
+		padding: 10px;
 	}
 }

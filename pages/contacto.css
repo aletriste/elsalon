@@ -1,3 +1,10 @@
 @import url(../styles/variables.css);
 
 /* agregar en este archivo cambios css para esta page */
+
+.maps {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 90%;
+}
