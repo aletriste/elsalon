@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="contacto.css">
+	<title>Contacto</title>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<!-- LOGO -->
+			<div class="logo"><img src="../assets/icons/logo-icon-48x48.png" alt="logo" width="48px" height="48px"></div>
+
+			<!-- NAVIGATION MENU -->
+			<ul class="nav-links">
+
+				<!-- USING CHECKBOX HACK -->
+				<input type="checkbox" id="checkbox_toggle" />
+				<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+				<!-- NAVIGATION MENUS -->
+				<div class="menu">
+
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#turnos">Turnos</a></li>
+					<li><a href="./contacto.html">Contacto</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<h1>Contacto</h1>
+		<section class="main-section" id="contacto">
+			<div class="container container-contact">
+				<div class="card contact-card">
+					<div><a href="http://">
+							<img src="../assets/icons/marcador24.png" alt="localización">
+							<br />Localización</a>
+					</div>
+					<div><a
+							href="https://api.whatsapp.com/send?phone=5491123456789&text=Hola!%20Quiero%20contactarme%20con%20vos."
+							target="_blank" rel="noopener noreferrer">
+							<img src="../assets/icons/whatsapp24.png" alt="tel">
+							<br />11233456789</a>
+					</div>
+					<div><a href="mailto:"><img src="../assets/icons/sobre24.png" alt="mail">
+							<br />mailtest@test.com</a>
+					</div>
+				</div>
+				<div class="card">
+					<form action="" method="post">
+						<span>Enviamos un mensaje</span>
+
+						<label for="nombre"><input type="text" max="99" name="nombre" id="" placeholder="Ingresa tu nombre"></label>
+						<label for="apellido"><input type="email" max="99" name="apellido" id=""
+								placeholder="Ingresa tu mail"></label>
+						<textarea name="" id="" placeholder="Ingresa tu mensaje"></textarea>
+						<input type="submit" name="" id="" value="Submit">
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+</body>
+
+</html>
