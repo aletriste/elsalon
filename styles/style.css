@@ -165,6 +165,10 @@ textarea {
 	padding: 10px;
 }
 
+h2 {
+	text-align: center;
+}
+
 @media (min-width: 900px) {
 	.container-3 {
 		grid-template-columns: repeat(3, 1fr);
