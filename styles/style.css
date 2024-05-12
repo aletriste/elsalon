@@ -40,10 +40,10 @@ button:hover{
 
 .main-section{
   background-color: var(--bg-color-principal);
-  margin-right: 4vw;
-  margin-left: 4vw;
+  /*margin-right: 4vw;
+  margin-left: 4vw;*/
   margin-top: 1vw;
-  padding: 1vw;
+  padding: 1vm;
 
   /* -- Ajusta el tamaño de los SECTIONS para que ocupen un 100% aproximado por el margen colocado -- */
   width: 92%;
@@ -52,9 +52,11 @@ button:hover{
 }
 #home {
   /* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
-  background-image: url("../assets/img/combs-scissors-copy-space.jpg");
+  background-image: var(--home-image);
+  
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
 .container-2{
@@ -95,10 +97,18 @@ button:hover{
 
 @media (min-width: 600px) {
   .container { grid-template-columns: repeat(2, 1fr); }
+  .main-section{
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
 }
 
 @media (min-width: 900px) {
   .container-3 { grid-template-columns: repeat(3, 1fr); }
+  .main-section{
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
 }
 
 @media (max-width: 1200px) {
