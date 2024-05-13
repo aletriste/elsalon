@@ -1,0 +1,15 @@
+@import url(../styles/variables.css);
+
+/* agregar en este archivo cambios css para esta page */
+
+.reserva {
+    padding: 20px
+}
+
+.p1{
+    padding: 20px 0 10px 0
+}
+
+.p2{
+    padding: 0 0 20px 0
+}

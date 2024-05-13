@@ -1,118 +1,199 @@
-
-@import url("./variables.css");
-@import url("./navbar.css");
+@import url('./variables.css');
+@import url('./navbar.css');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth ;
-}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	background-color: var(--bg-color-principal);
 }
 
-button{
-  background-color: var(--bg-boton-principal);
-  background: var(--bg-boton-principal);
-  border-radius: 50px;
-  padding: 5px;
-  margin: 5px;
-  border: 0cap;
+button {
+	background-color: var(--bg-boton-principal);
+	background: var(--bg-boton-principal);
+	border-radius: 50px;
+	padding: 10px 15px;
+	margin: 5px;
+	font-weight: 700;
+	border: 0cap;
+	transition: all 0.3s;
 }
 
-button:hover{
-  background-color: var(--bg--button-hoover);
+button:hover {
+	background-color: var(--bg--button-hoover);
+	transform: scale(1.1);
 }
 
-.servicios-images{
-  max-width: 100%;
-  height: auto;
+.servicios-images {
+	max-width: 100%;
+	height: auto;
 }
 
-.responsive-images{
-  width: 100%;
-  height: auto;
+.responsive-images {
+	width: 100%;
+	height: auto;
 }
 
-.main-section{
-  background-color: var(--bg-color-principal);
-  /*margin-right: 4vw;
-  margin-left: 4vw;*/
-  margin-top: 1vw;
-  padding: 1vm;
-
-  /* -- Ajusta el tamaño de los SECTIONS para que ocupen un 100% aproximado por el margen colocado -- */
-  width: 92%;
-  height: 96vh;
-  
+.main-section,
+.main {
+	padding: 40px;
+	background-color: var(--bg-color-principal);
+	margin: 0;
+	margin-top: 55px;
 }
-#home {
-  /* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
-  background-image: var(--home-image);
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-}
-
-.container-2{
-
-  max-width: 100%;
-}
-
-
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
+	max-width: 100%;
+	margin: 0 auto;
+	display: grid;
+	gap: 1rem;
 }
 
+.container-2 {
+	max-width: 100%;
+	height: auto;
+}
+
+.container-contact {
+	max-width: 100%;
+	gap: 0;
+}
+
+.contact-card {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 .card {
-  background-color: var(--card-color-principal);
-  color: var(--text-color-primary);
-  padding: 1rem;
-  height: auto;
-  /* -- Deja Centrado los Elementos del HOME  vertical y horizontalmente -- */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	background-color: var(--card-color-principal);
+	color: var(--text-color-primary);
+	padding: 1.3rem;
+	height: auto;
 }
-.home-card{
-  background-color: transparent;
-  gap: 40px;
-}
-.home-buttons button{
-  padding: 10px;
-  font-size: 20px;
-  transition: all ease-in-out 0.3s;
+.home-card {
+	background-color: transparent;
+	gap: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (min-width: 600px) {
-  .container { grid-template-columns: repeat(2, 1fr); }
-  .main-section{
-    margin-right: 4vw;
-    margin-left: 4vw;
-  }
+h3 {
+	text-shadow: 0.1px 0.1px 5px #fff;
+}
+
+.p1{
+    padding: 20px 0 10px 0
+}
+
+.p2{
+	padding: 0 0 10px 0
+}
+.p3{
+    padding: 0 0 20px 0
+}
+.card form {
+	display: flex;
+	flex-direction: column;
+	max-width: 90%;
+	gap: 10px;
+	background-color: var(--card-color-principal);
+}
+.card form textarea {
+	max-width: 90%;
+	min-height: 80px;
+	resize: none;
+}
+.card form input,
+textarea {
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 3px;
+	border: none;
+	box-shadow: -1px 2px 3px #00000081;
+	background-color: #d9d9d9;
+}
+
+#home {
+	/* -- se mueve el background al id HOME para evitar conflicto con los containers y otras sections -- */
+	background-image: var(--bg--home-image);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.iframe-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 0; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	height: 0;
+}
+
+.responsive-iframe {
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 50vh;
+}
+
+.footer-container {
+	display: flex;
+	background-color: var(--bg-color-secundario);
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.redes {
+	padding: 10px;
+}
+
+h2 {
+	text-align: center;
 }
 
 @media (min-width: 900px) {
-  .container-3 { grid-template-columns: repeat(3, 1fr); }
-  .main-section{
-    margin-right: 4vw;
-    margin-left: 4vw;
-  }
+	.container-3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.main-section {
+		padding-right: 4vw;
+		padding-left: 4vw;
+	}
 }
 
-@media (max-width: 1200px) {
-  #home {
-    background-image: none;
-  }
+@media (min-width: 600px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.main-section {
+		padding-right: 4vw;
+		padding-left: 4vw;
+	}
+	.contact-card {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 900px) {
+	.main-section {
+		margin-top: 65px;
+		padding: 10px;
+	}
+
+	.main {
+		padding: 10px;
+	}
 }

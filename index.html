@@ -1,113 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link rel="stylesheet" href="./styles/review.css">
     <title>El Salon</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo"><img src="./assets/icons/logo-icon-48x48.png" alt="logo" width="48px" height="48px"></div>
-        
+
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
-        
-              <!-- USING CHECKBOX HACK -->
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-        
-                <li><a href="#home">Home</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>        
-                <li><a href="#servicios">Servicios</a></li>                
-                <li><a href="#turnos">Turnos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-              </div>
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/turnos.html">Turnos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </div>
             </ul>
-          </nav>
+        </nav>
     </header>
     <main>
         <section class="main-section" id="home">
-        <div class="container container-2">
-            <div class="card home-card">
-                <div><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vel ratione ab porro est harum ipsa dolore voluptatibus adipisci commodi explicabo pariatur non, perferendis soluta assumenda possimus, aspernatur minus dolorem!</h3>
+            <div class="container conteiner-2">
+                <div class="card home-card">
+                    <div>
+                        <h3>En El Salón nos apasiona realzar tu belleza y hacerte sentir increíble. Aquí, cada corte de
+                            cabello es una obra de arte y cada cliente es una estrella. Con nuestro toque experto y
+                            atención personalizada ¡estamos listos para transformar tu look!★</h3>
+                    </div>
+                    <div>
+                        <span><button><a href="./pages/contacto.html">Contáctenos</a></button></span>
+                        <span><button><a href="./pages/turnos.html">Turnos</a></button> </span>
+                    </div>
+
                 </div>
-                <div>
-                    <span class="home-buttons"><button>Contactanos</button></span>
-                    <span class="home-buttons"><button>Turnos</button> </span>
-                </div>
-    
+                <div class="card home-card"><img src="./assets/img/el salon.png" alt="el salon"
+                        class="responsive-images"></div>
+
             </div>
-            <div class="card home-card"><img src="./assets/img/el salon.png" alt="el salon" class="responsive-images"></div>
-            
-        </div>
         </section>
         <section class="main-section" id="nosotros">
-            <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit eos quisquam eveniet voluptate quo ipsam laboriosam earum cum! Doloribus, blanditiis explicabo vel dolores laboriosam nulla eius repellendus at consectetur.</div>
-        </section>
-        <section class="main-section" id="servicios">
-            <div class="container container-3">
-                <div class="card">
-                    <div><img src="./assets/img/back-view-woman-cutting-her-client-s-hair.jpg" alt="back-view-woman-cutting-her-client-s-hair.jpg" class="servicios-images"></div>
-                    <div>Corte y Cejas</div>
-                </div>
-                <div class="card">
-                    <div><img src="./assets/img/woman-having-her-hair-washed-salon.jpg" alt="woman-having-her-hair-washed-salon" class="servicios-images"></div>
-                    <div>Lavado y Nutricion</div>
-                    
-                </div>
-                <div class="card">
-                    <div><img src="./assets/img/hairdresser-colored-hair-her-client-hair-salon.jpg" alt="woman-having-her-hair-washed-salon" class="servicios-images"></div>
-                    <div>Decoloracion y tintura</div>
-                    
-                </div>
-                    
-            </div>
-        </section>
-        <section class="main-section"id="turnos">
-            <div class="container">
-                <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ab, assumenda a excepturi aut itaque, ea perferendis eaque at eos provident distinctio blanditiis voluptate similique suscipit rem est, veniam molestias.</div>
-            </div>
-        </section>
-        <section class="main-section" id="contacto">
-            <div class="container">
-                <div class="card">
-                    <div><a href="http://">
-                        <img src="./assets/icons/favicon-16x16.png" alt="localizacion">
-                        <br/>Localizacion</a>
-                    </div>
-                    <div><a href="tel:+5411233456789">
-                        <img src="./assets/icons/favicon-16x16.png" alt="tel">
-                        <br/>11233456789</a>
-                    </div>
-                    <div><a href="mailto:"><img src="./assets/icons/favicon-16x16.png" alt="mail">
-                        <br/>mailtest@test.com</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <form action="" method="post">
-                        <span>Enviamos un mensaje</span>
-                        <div>
-                        <div><label for="nombre"></label><input type="text" max="99" name="nombre" id="">
-                        </div>
-                        <div><label for="apellido"></label><input type="text" max="99" name="apellido" id="">
-                        </div>
-                        <div>
-                        <textarea name="" id="" cols="60" rows="10"></textarea>
-                        </div>
-                        </div>
-                        <input type="submit" name="" id="" value="Submit">
-                    </form>
-                </div>
-            </div>
+            <h1>Nosotros</h1>
+            <p class="p1">Nos complace presentarte nuestra peluquería, un espacio dedicado a la belleza y el cuidado personal donde la calidad y la atención personalizada son nuestra prioridad. Ofrecemos una amplia gama de servicios que incluyen cortes de cabello, tinturas personalizadas y peinados exclusivos para cada ocasión. Nuestros estilistas profesionales están comprometidos con la excelencia y se mantienen al día con las últimas tendencias y técnicas para garantizar que cada visita sea una experiencia única.</p>
+            <p class="p2">Sabemos que tu cabello es una expresión de tu identidad y por eso nos esforzamos en escuchar tus deseos y necesidades para ofrecerte un servicio que supere tus expectativas. Utilizamos productos de alta calidad para asegurarte los mejores resultados y la salud de tu cabello. Ya sea que busques un cambio de imagen radical o simplemente desees mantener tu estilo, estamos para asistirte con profesionalismo y creatividad.</p>
+            <p class="p3">Le invitamos a visitarnos y experimentar el ambiente acogedor de nuestra peluquería, donde la satisfacción del cliente es el corazón de nuestro negocio. Estamos seguros de que, una vez que pruebes nuestros servicios, te encantarán los resultados y la atención que recibirás.</p>
+
+
         </section>
     </main>
 
+    <h2>Reseñas</h2>
+    <div id="review" class="review">
+
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <a class="redes" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/facebook32.png">
+                </a>
+                <a class="redes" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/instagram32.png">
+                </a>
+            </div>
+            <div class="firma">
+                <h6>Todos los derechos reservados por <img src="./assets/icons/favicon-32x32.png" alt="logo"> - 2024
+                    &#169;</h6>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/review.js"></script>
 </body>
+
 </html>
