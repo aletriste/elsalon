@@ -61,8 +61,11 @@
 						<span>Enviamos un mensaje</span>
 
 						<label for="nombre"><input type="text" max="99" name="nombre" id="" placeholder="Ingresa tu nombre"></label>
-						<label for="apellido"><input type="email" max="99" name="apellido" id=""
-								placeholder="Ingresa tu mail"></label>
+						<div>
+							<p><label for="email"><input type="email" max="99" name="email" id="email" oninput="validateEmailInput()"
+								placeholder="Ingresa tu mail"></label></p>
+							<p class="error-text" id="error-email"></p>
+						</div>
 						<textarea name="" id="" placeholder="Ingresa tu mensaje"></textarea>
 						<input type="submit" name="" id="" value="Submit">
 					</form>
@@ -83,7 +86,7 @@
 	</main>
 
 
-</body>
+
 <footer>
 	<div class="footer-container">
 		<div>
@@ -100,5 +103,6 @@
 		</div>
 	</div>
 </footer>
-
+<script type="text/javascript" src="../js/validate.js"></script>
+</body>
 </html>
