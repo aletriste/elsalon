@@ -9,3 +9,14 @@ function validateEmailInput() {
       errorEmail.textContent = "Please enter a valid email address.";
     }
 };
+
+function validateNumeroInput(){
+    const numeroInput = document.getElementById('telefono').value;
+    const errorNumero = document.getElementById('error-numero');
+    const numeroRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/; //este regex necesita mejorar
+    if (numeroRegex.test(numeroInput)) {
+        errorNumero.textContent = "" // numero is valid;
+    } else {
+        errorNumero.textContent = "Please enter a valid telephone number."; 
+    };
+}
