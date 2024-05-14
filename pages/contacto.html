@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<form action="" method="post">
+					<form action="/contacto/new" method="post" nctype="multipart/form-data">
 						<span>Enviamos un mensaje</span>
 						<div>
 							<label for="nombre"><input type="text" max="99" name="nombre" id="nombre" placeholder="Ingresa tu nombre"></label>
@@ -71,7 +71,21 @@
 							<p><label for="telefono"><input type="text" name="telefono" id="telefono" oninput="validateNumeroInput()" placeholder="Ingresa un telefono"></label></p>
 							<p class="error-text" id="error-numero"></p>
 						</div>
-						<textarea name="" id="" placeholder="Ingresa tu mensaje"></textarea>
+						<div>
+							<p><label for="servicios"><select name="servicios" id="servicios">
+								<option value="corte y cejas">Corte y Cejas</option>
+								<option value="lavado y nutrición">Lavado y Nutrición</option>
+								<option value="decoloración y tintura">Decoloración y Tintura</option>
+								<option value="peinados">Peinados</option>
+							</select></label></p>
+						</div>
+						<div>
+						<div>
+							<label for=""><input type="file" name="file" id="file"></label>
+						</div>	
+							<label for="textarea"><textarea name="" id="textarea" placeholder="Ingresa tu mensaje"></textarea></label>
+						</div>
+						
 						<input type="submit" name="" id="" value="Submit">
 					</form>
 				</div>
