@@ -8,3 +8,11 @@
 	font-size: 1.2rem;
 	text-align: center;
 }
+
+h1 {
+	animation: textAnimation 0.9s;
+	text-align: center;
+	color: var(--bg-color-secundario);
+	font-weight: bold;
+	font-size: 3rem;
+}

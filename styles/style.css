@@ -52,6 +52,7 @@ button:hover {
 .responsive-images {
 	width: 100%;
 	height: auto;
+	animation: imgAnimation 0.8s;
 }
 
 .main-section,
@@ -60,6 +61,20 @@ button:hover {
 	background-color: var(--bg-color-principal);
 	margin: 0;
 	margin-top: 55px;
+}
+
+#nosotros {
+	background-color: var(--bg-color-secundario);
+	margin: 80px 30px;
+	border-radius: 6px;
+	padding: 30px 50px;
+}
+#nosotros p {
+	font-weight: 500;
+}
+#nosotros h1 {
+	text-align: center;
+	font-size: 2.2rem;
 }
 
 .container {
@@ -102,19 +117,20 @@ button:hover {
 	align-items: center;
 }
 
-h3 {
+.home-card h3 {
 	text-shadow: 0.1px 0.1px 5px #fff;
+	animation: textAnimation 0.6s;
 }
 
-.p1{
-    padding: 20px 0 10px 0
+.p1 {
+	padding: 20px 0 10px 0;
 }
 
-.p2{
-	padding: 0 0 10px 0
+.p2 {
+	padding: 0 0 10px 0;
 }
-.p3{
-    padding: 0 0 20px 0
+.p3 {
+	padding: 0 0 20px 0;
 }
 .card form {
 	display: flex;
@@ -210,5 +226,10 @@ h2 {
 
 	.main {
 		padding: 10px;
+	}
+
+	#nosotros {
+		border-radius: 0;
+		margin: 50px 0;
 	}
 }
