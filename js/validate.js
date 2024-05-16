@@ -42,4 +42,5 @@ function validateNumeroInput() {
 function datosValidos() {
 	const datosValidos = document.getElementById('datos-validos');
 	datosValidos.textContent = 'Los datos han sido enviados correctamente.';
+	formContacto.reset();
 }
