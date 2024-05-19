@@ -81,12 +81,16 @@ button:hover {
 	max-width: 100%;
 	margin: 0 auto;
 	display: grid;
-	gap: 1rem;
+	/**/
 }
 
 .container-2 {
 	max-width: 100%;
 	height: auto;
+}
+
+.container-3{
+	gap: 1rem;
 }
 
 .container-contact {
@@ -109,17 +113,24 @@ button:hover {
 	height: auto;
 }
 .home-card {
-	background-color: transparent;
-	gap: 40px;
+	/*background-color: transparent;*/
+	/*gap: 40px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: radial-gradient(circle, rgba(245,199,211,0.7) 0%, rgba(245,199,211,0) 100%);
 }
 
 .home-card h3 {
-	text-shadow: 0.1px 0.1px 5px #fff;
+	text-shadow: 0.1px 0.1px 10px rgba(245,199,211,1);	
 	animation: textAnimation 0.6s;
+	padding-top: 3rem;
+}
+
+.bienvenida{
+
+	padding: 2rem;
 }
 
 .p1 {
@@ -180,19 +191,26 @@ textarea {
 }
 
 .footer-container {
-	display: flex;
+	display: grid;
 	background-color: var(--bg-color-secundario);
-	flex-direction: row;
-	justify-content: space-evenly;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
 	padding: 10px;
+	gap: 3rem;
+
 }
 
 .redes {
-	padding: 10px;
+	text-align: center;
 }
 
-h2 {
-	text-align: center;
+.red{
+	padding: 20px;
+}
+
+.firma {
+	text-align: start;
+	padding: 15px 10px 10px 10px;
 }
 
 @media (min-width: 900px) {
@@ -232,4 +250,30 @@ h2 {
 		border-radius: 0;
 		margin: 50px 0;
 	}
+}
+
+@media (max-width: 600px) {
+.footer-container {
+	display: grid;
+	background-color: var(--bg-color-secundario);
+	grid-template-columns: 100vw;
+	grid-template-rows: 40% 60%;
+	gap: 0rem;
+	justify-content: space-around;
+
+}
+
+.redes {
+	text-align: center;
+}
+
+.red{
+	padding: 1.5rem 1rem 0rem 1rem;
+}
+
+.firma {
+	text-align: center;
+	padding: 0.5rem 1rem;
+
+}
 }
