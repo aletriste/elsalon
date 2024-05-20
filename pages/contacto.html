@@ -57,14 +57,44 @@
 					</div>
 				</div>
 				<div class="card">
-					<form action="" method="post">
+					<form id="form-contacto" action="/contacto/new" method="post" nctype="multipart/form-data">
 						<span>Enviamos un mensaje</span>
-
-						<label for="nombre"><input type="text" max="99" name="nombre" id="" placeholder="Ingresa tu nombre"></label>
-						<label for="apellido"><input type="email" max="99" name="apellido" id=""
-								placeholder="Ingresa tu mail"></label>
-						<textarea name="" id="" placeholder="Ingresa tu mensaje"></textarea>
+						<div>
+							<label for="nombre"><input type="text" max="99" name="nombre" id="nombre"
+									placeholder="Ingresa tu nombre"></label>
+						</div>
+						<div>
+							<p><label for="email"><input type="email" max="99" name="email" id="email" oninput="validateEmailInput()"
+										placeholder="Ingresa tu mail"></label></p>
+							<p class="error-text" id="error-email"></p>
+						</div>
+						<div>
+							<p><label for="telefono"><input type="number" name="telefono" id="telefono"
+										oninput="validateNumeroInput()" placeholder="Ingresa un telefono"></label></p>
+							<p class="error-text" id="error-numero"></p>
+						</div>
+						<div>
+							<p><label for="servicios"><select name="servicios" id="servicios">
+										<option value="corte y cejas">Corte y Cejas</option>
+										<option value="lavado y nutrición">Lavado y Nutrición</option>
+										<option value="decoloración y tintura">Decoloración y Tintura</option>
+										<option value="peinados">Peinados</option>
+									</select></label></p>
+						</div>
+						<div>
+							<div>
+								<label for=""><input type="file" name="file" id="file"></label>
+							</div>
+							<label for="textarea"><textarea name="" id="textarea" placeholder="Ingresa tu mensaje"></textarea></label>
+						</div>
+						<div>
+							<p><label for="condiciones"><input type="checkbox" name="condiciones" id="condiciones">Acepto los terminos
+									y condiciones.</label></p>
+							<p><label for="contactar"><input type="checkbox" name="contactar" id="contactar">Acepto que me contacte
+									por informacion y promociones</label></p>
+						</div>
 						<input type="submit" name="" id="" value="Submit">
+						<p class="error-text" id="datos-validos"></p>
 					</form>
 				</div>
 			</div>
@@ -83,22 +113,24 @@
 	</main>
 
 
+
+	<footer>
+		<div class="footer-container">
+			<div>
+				<a class="redes" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+					<img src="../assets/icons/facebook32.png">
+				</a>
+				<a class="redes" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+					<img src="../assets/icons/instagram32.png">
+				</a>
+			</div>
+			<div class="firma">
+				<h6>Todos los derechos reservados por <img src="../assets/icons/favicon-32x32.png" alt="logo"> - 2024
+					&#169;</h6>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/validate.js"></script>
 </body>
-<footer>
-	<div class="footer-container">
-		<div>
-			<a class="redes" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-				<img src="../assets/icons/facebook32.png">
-			</a>
-			<a class="redes" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-				<img src="../assets/icons/instagram32.png">
-			</a>
-		</div>
-		<div class="firma">
-			<h6>Todos los derechos reservados por <img src="../assets/icons/favicon-32x32.png" alt="logo"> - 2024
-				&#169;</h6>
-		</div>
-	</div>
-</footer>
 
 </html>

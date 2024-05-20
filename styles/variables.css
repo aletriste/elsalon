@@ -9,4 +9,21 @@
 	--bg--home-image: url('../assets/img/combs-scissors-copy-space.jpg');
   --home-image: url("../assets/img/combs-scissors-copy-space.jpg");
 }
-    
+
+@keyframes textAnimation {
+	0% {
+		translate: -1000px;
+	}
+	100% {
+		translate: 0px;
+	}
+}
+
+@keyframes imgAnimation {
+	0% {
+		translate: 3000px;
+	}
+	100% {
+		translate: 0px;
+	}
+}
