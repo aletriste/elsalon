@@ -181,6 +181,11 @@ textarea {
 	height: 50vh;
 }
 
+.title_review {
+	text-align: center;
+	font-size: 2rem;
+}
+
 .footer-container {
 	display: grid;
 	background-color: var(--bg-color-secundario);
