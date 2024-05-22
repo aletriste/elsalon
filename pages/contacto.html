@@ -14,7 +14,7 @@
 	<header>
 		<nav class="navbar">
 			<!-- LOGO -->
-			<div class="logo"><img src="../assets/icons/logo-icon-48x48.png" alt="logo" width="48px" height="48px"></div>
+			<div class="logo"><img src="../assets/icons/logo-icon-48x48.png" alt="logo"></div>
 
 			<!-- NAVIGATION MENU -->
 			<div class="nav-links">
@@ -42,7 +42,8 @@
 		<section class="main-section" id="contacto">
 			<div class="container container-contact">
 				<div class="card contact-card">
-					<div><a href="http://">
+					<div><a
+							href="https://www.google.com/maps/place/Calle+Ficticia+y+Calle+Ficticia/@-34.71675,-56.14848,1067m/data=!3m1!1e3!4m6!3m5!1s0x95a02da2a548fb93:0xb5f0414b90e28162!8m2!3d-34.71675!4d-56.14848!16s%2Fg%2F11np3kfnjl?hl=es-419&entry=ttu">
 							<img src="../assets/icons/marcador24.png" alt="localización">
 							<br />Localización</a>
 					</div>
@@ -57,14 +58,13 @@
 					</div>
 				</div>
 				<div class="card">
-					<form id="form-contacto" action="/contacto/new" method="post" nctype="multipart/form-data">
+					<form id="form-contacto" action="/contacto/new" method="post">
 						<span>Enviamos un mensaje</span>
 						<div>
-							<label for="nombre"><input type="text" max="99" name="nombre" id="nombre"
-									placeholder="Ingresa tu nombre"></label>
+							<label for="nombre"><input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"></label>
 						</div>
 						<div>
-							<p><label for="email"><input type="email" max="99" name="email" id="email" oninput="validateEmailInput()"
+							<p><label for="email"><input type="email" name="email" id="email" oninput="validateEmailInput()"
 										placeholder="Ingresa tu mail"></label></p>
 							<p class="error-text" id="error-email"></p>
 						</div>
@@ -83,9 +83,10 @@
 						</div>
 						<div>
 							<div>
-								<label for=""><input type="file" name="file" id="file"></label>
+								<label for="file"><input type="file" name="file" id="file"></label>
 							</div>
-							<label for="textarea"><textarea name="" id="textarea" placeholder="Ingresa tu mensaje"></textarea></label>
+							<label for="textarea"><textarea name="textarea" id="textarea"
+									placeholder="Ingresa tu mensaje"></textarea></label>
 						</div>
 						<div>
 							<p><label for="condiciones"><input type="checkbox" name="condiciones" id="condiciones">Acepto los terminos
@@ -93,7 +94,7 @@
 							<p><label for="contactar"><input type="checkbox" name="contactar" id="contactar">Acepto que me contacte
 									por informacion y promociones</label></p>
 						</div>
-						<input type="submit" name="" id="" value="Submit">
+						<input type="submit" value="Submit">
 						<p class="error-text" id="datos-validos"></p>
 					</form>
 				</div>
@@ -116,21 +117,21 @@
 
 	<footer>
 		<div class="footer-container">
-			<div>
-				<a class="redes" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-					<img src="../assets/icons/facebook32.png">
+			<div class="redes">
+				<a class="red" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+					<img src="assets/icons/facebook32.png" alt="facebook logo">
 				</a>
-				<a class="redes" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-					<img src="../assets/icons/instagram32.png">
+				<a class="red" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+					<img src="assets/icons/instagram32.png" alt="instagram logo">
 				</a>
 			</div>
 			<div class="firma">
-				<h6>Todos los derechos reservados por <img src="../assets/icons/favicon-32x32.png" alt="logo"> - 2024
+				<h6>Todos los derechos reservados por <img src="./assets/icons/favicon-32x32.png" alt="logo"> - 2024
 					&#169;</h6>
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="../js/validate.js"></script>
+	<script src="../js/validate.js"></script>
 </body>
 
 </html>
